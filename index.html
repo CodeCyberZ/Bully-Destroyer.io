@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Anti Bullying Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <div class="gradient-background"> 
+        <div class="header">
+            <ul>
+                <li><a href="#info-section"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about-Bullying-Destroyer"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+            </ul>
+
+            <h2>Anti-Bullying Chatbot</h2>
+            <a href="chat.html"><button class="btn btn-primary">Chatbot</button></a>
+            
+            <div class="info-section">
+                <p>Welcome to the Anti-Bullying Chatbot</p>
+                <p>This platform is designed to help victims of bullying report their experiences and seek support.</p>
+            </div>
+        </div>
+
+        <section id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h1>How It Works?</h1>
+                    <div class="line"></div>
+                </div>
+                <div class="scrollable-container"> 
+                    <div class="service">
+                        <h3>Website focus?</h3>
+                        <p>Our website focuses on how we can help the bullying victim to report their bully.</p>
+                    </div>
+                    <div class="service">
+                        <h3>User report the bullying via chat</h3>
+                        <p>Focus on how it can help the bullying victim.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Admin will respond in real-time</h3>
+                        <p>Focus on how it can help the bullying victim.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-Bullying-Destroyer">
+            <div class="container">
+                <div class="about-content">
+                    <h4>About Bullying Destroyer</h4>
+                    <p>We are dedicated to providing the best service possible. It helps students to report their bully to this site.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <ul class="footer-links">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+                <p>&copy; 2024 ICT Website. All rights reserved.</p>
+            </div>
+        </footer>
+    </div> 
+
+    <script>
+        // Smooth scrolling for navbar links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
