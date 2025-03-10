@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bully Destroyer Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loadingScreen">
+  <div id="loadingText" text-align="center">
+    <span class="dot">•</span>
+    <span class="dot">•</span>
+    <span class="dot">•</span>
+    Loading, please wait...
+  </div>
+</div>
+
+<!-- Chatbox -->
+<div id="chatbox">
+  <div id="header">
+  <h2> 🚫 BULLY DESTROYER</h2>
+    <div id="typingIndicator" style="display: none; color: gray; font-style: italic;">
+      Chatbot is typing
+    <span class="dot">•</span>
+    <span class="dot">•</span>
+    <span class="dot">•</span></div>
+</div>
+  <div id="messages"></div>
+<div id="inputContainer">
+   <div id="typingIndicator" style="display: none; color: gray; font-style: italic;">You are typing...</div>
+  <label for="fileInput" align="center"> 📎 Add File</label>
+  <input type="file" id="fileInput" onchange="sendFile()" style="margin-top: 10px;">
+<div class="chat-buttons">
+  <button onclick="sendFixedMessage('Hi, I need help with my concern.')"> 🤝 Need Help </button>
+  <button onclick="sendFixedMessage('I want to report a bullying incident.')"> ❗ Report Bully</button>
+  <button onclick="sendFixedMessage('Can I talk to you?')"> 📞 Talk to you</button>
+</div>
+
+<!-- Dropdown for Types of Bullying -->
+<div style="margin-bottom: 10px;">
+  <select id="bullyingTypes" onchange="handleBullyingType()">
+    <option value="">Select Type of Bullying</option>
+    <option value="physical">Physical Bullying</option>
+    <option value="verbal">Verbal Bullying</option>
+    <option value="cyber">Cyberbullying</option>
+    <option value="social">Social Bullying</option>
+  </select>
+</div>
+  <input type="text" id="userInput" placeholder="Type a message...">
+  <button onclick="sendMessage()"> ➡️ Send</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: black; /* Set default text color to white */
+    height: 100vh;
+    width: 100vw;
+}
+
+.gradient-background {
+    background: white;
+    background-size: 400% 400%;
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    animation: animate 15s ease infinite;
+}
+
+.header ul {
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; 
+}
+
+.header ul li {
+    display: inline-block;
+    padding: 10px; 
+    position: relative; 
+}
+
+.header ul li a {
+    color: black; /* Text color for navigation links */
+    text-decoration: none; 
+    font-size: 18px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.header ul li a i {
+    margin-right: 10px; 
+    font-size: 24px; 
+}
+.header {
+    font-size: 150%;
+    text-align: center;
+    color: black; /* Heading color */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.head {
+  background-color: #57CC99;
+}
+.header a button {
+    margin: 20px auto; 
+    padding: 15px 30px; 
+    display: block; 
+    background-color: #80ED99; 
+    color: black; /* Button text color */
+    border: none; 
+    border-radius: 10px; 
+    font-size: 20px; 
+    cursor: pointer; 
+    transition: box-shadow 0.3s ease; 
+}
+
+.header a button:hover {
+    background: #57CC99; 
+}
+
+.info-section {
+    text-align: center; 
+    color: black; /* Text color */
+    margin-top: 20px; 
+    padding: 20px; 
+    font-size: 18px; 
+}
+
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    color: black; /* Section title color */
+}
+
+.line {
+    width: 300px;
+    height: 4px;
+    background: #57CC99; 
+    margin: 10px auto;
+}
+
+ .scrollable-container {
+    display: flex;
+    flex-direction: column; 
+    max-height: 350px; 
+    overflow-y: auto; 
+    margin: 20px 0; 
+    background-color: whitesmoke;
+}
+
+.service {
+    text-align: center;
+    margin: 10px; 
+    padding: 20px; 
+    border-radius: 20px;
+    background-color: #80ED99;
+}
+
+.about-content {
+    text-align: center;
+    margin: 40px 0; 
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black; 
+}
+.about-content p {
+  text-align: justify;
+}
+
+#contact-info {
+    color: black;
+    text-align: center;
+    font-size: 15px; 
+    display: block; 
+    width: 100vw;
+    align-items: center; 
+}
+
+.contact {
+  color: black;
+  text-decoration: none;
+  background-color: #C7F9CC;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.contact a {
+  color: black;
+}
+
+.contact i {
+  font-size: 20px;
+  padding: 5px;
+}
+
+footer {
+    background: transparent; 
+    color: black; 
+    padding: 20px; 
+    text-align: center;
+    background-color: #80ED99;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 20px;
+    margin: 0px 0; 
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: black; 
+    text-decoration: none;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
